@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<ArrayOfTextData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TextData ID="10000" eng="Tadshi: If I’m dead, why does everything still hurt? A corpse shouldn’t feel pain." />
+  <TextData ID="10001" eng="Yokai: Ah, because you are not dead, friend." />
+  <TextData ID="10002" eng="Tadashi: So my splattered blood and fall from Mt. Fukaido was all a farce, then? I get it, I lost, I’ll pay my penance now." />
+  <TextData ID="10003" eng="Yokai: No, that all was very much real. You did lose, and you did die. I have pulled you from the aether beyond, and instilled you with the light of life once more." />
+  <TextData ID="10004" eng="Tadashi: Pulled from Yomi’s gates? Why?" />
+  <TextData ID="10005" eng="Yokai: There is too much unspent potential in your heart." />
+  <TextData ID="10006" eng="Tadashi: Yeah, everyone saw so much potential in me. And look what happened." />
+  <TextData ID="10007" eng="Tadashi: I defied one of the Shogun’s orders, refused to kill my own sensei, and that bastard cast me out for it!" />
+  <TextData ID="10008" eng="Tadashi: Exiled, then stabbed through the heart in my failure for revenge." />
+  <TextData ID="10009" eng="Tadashi: Not sure which is worse." />
+  <TextData ID="10010" eng="Yokai: You failed, yes. But now you are reformed, remade. You are better than you were before, and still may yet be better than what you are now." />
+  <TextData ID="10011" eng="Tadashi: Spare me the wise mantra, spirit." />
+  <TextData ID="10012" eng="Yokai: Whether you accept your calling for vengeance against the man who wronged you, or return to the quiet life you once knew, you are now blessed with my Luciferin." />
+  <TextData ID="10013" eng="Tadashi: What in Yomi’s rot is Luciferin?" />
+  <TextData ID="10014" eng="Yokai: It is the lifeblood of my light, and what powers your new weapon." />
+  <TextData ID="10015" eng="Tadashi: What new weapon?" />
+  <TextData ID="10016" eng="Tadashi: What the-" />
+  <TextData ID="10017" eng="Tadashi: This power… this radiance…" />
+  <TextData ID="10018" eng="Yokai: Impressive, isn’t it? Though due to its nature, you must use it responsibly." />
+  <TextData ID="10019" eng="Yokai: Find my fireflies around you, use them to charge the weapon, and use it to strike true when it matters most." />
+  <TextData ID="10020" eng="Yokai: Now go and begin your journey. There is someone waiting just outside this grove that I think you’ll be happy to test your newfound power on." />
+</ArrayOfTextData>

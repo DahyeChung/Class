@@ -1,0 +1,18 @@
+{
+    "name": "EasyExcel.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:925ad6619f9ba40488c65292cebf906f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947b371d475c84748846bd8a315f3015, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  SpreadsheetFileName: GameData.xlsx
+  SpreadsheetSheetName: Dialogue
+  KeyFieldName: _Id
+  _dataList:
+  - _Id: 1001
+    _Speaker: Tadshi
+    _Text: "If I\u2019m dead, why does everything still hurt? A corpse shouldn\u2019t
+      feel pain."
+  - _Id: 1002
+    _Speaker: Yokai
+    _Text: Ah, because you are not dead, friend.
+  - _Id: 1003
+    _Speaker: Tadashi
+    _Text: "So my splattered blood and fall from Mt. Fukaido was all a farce, then?
+      I get it, I lost, I\u2019ll pay my penance now."
+  - _Id: 1004
+    _Speaker: Yokai
+    _Text: No, that all was very much real. You did lose, and you did die. I have
+      pulled you from the aether beyond, and instilled you with the light of life
+      once more.
+  - _Id: 1005
+    _Speaker: Tadashi
+    _Text: "Pulled from Yomi\u2019s gates? Why?"
+  - _Id: 1006
+    _Speaker: Yokai
+    _Text: There is too much unspent potential in your heart.
+  - _Id: 1007
+    _Speaker: Tadashi
+    _Text: Yeah, everyone saw so much potential in me. And look what happened.
+  - _Id: 1008
+    _Speaker: Tadashi
+    _Text: "I defied one of the Shogun\u2019s orders, refused to kill my own sensei,
+      and that bastard cast me out for it!"
+  - _Id: 1009
+    _Speaker: Tadashi
+    _Text: Exiled, then stabbed through the heart in my failure for revenge.
+  - _Id: 1010
+    _Speaker: Tadashi
+    _Text: Not sure which is worse.
+  - _Id: 1011
+    _Speaker: Yokai
+    _Text: You failed, yes. But now you are reformed, remade. You are better than
+      you were before, and still may yet be better than what you are now.
+  - _Id: 1012
+    _Speaker: Tadashi
+    _Text: Spare me the wise mantra, spirit.
+  - _Id: 1013
+    _Speaker: Yokai
+    _Text: Whether you accept your calling for vengeance against the man who wronged
+      you, or return to the quiet life you once knew, you are now blessed with my
+      Luciferin.
+  - _Id: 1014
+    _Speaker: Tadashi
+    _Text: "What in Yomi\u2019s rot is Luciferin?"
+  - _Id: 1015
+    _Speaker: Yokai
+    _Text: It is the lifeblood of my light, and what powers your new weapon.
+  - _Id: 1016
+    _Speaker: Tadashi
+    _Text: What new weapon?
+  - _Id: 1017
+    _Speaker: Tadashi
+    _Text: What the-
+  - _Id: 1018
+    _Speaker: Tadashi
+    _Text: "This power\u2026 this radiance\u2026"
+  - _Id: 1019
+    _Speaker: Yokai
+    _Text: "Impressive, isn\u2019t it? Though due to its nature, you must use it
+      responsibly."
+  - _Id: 1020
+    _Speaker: Yokai
+    _Text: Find my fireflies around you, use them to charge the weapon, and use it
+      to strike true when it matters most.
+  - _Id: 1021
+    _Speaker: Yokai
+    _Text: "Now go and begin your journey. There is someone waiting just outside
+      this grove that I think you\u2019ll be happy to test your newfound power on."
+  - _Id: 2001
+    _Speaker: 
+    _Text: 
+  - _Id: 2002
+    _Speaker: 
+    _Text: 
+  - _Id: 2003
+    _Speaker: 
+    _Text: 
+  - _Id: 2004
+    _Speaker: 
+    _Text: 
+  - _Id: 2005
+    _Speaker: 
+    _Text: 
+  - _Id: 2006
+    _Speaker: 
+    _Text: 
+  - _Id: 2007
+    _Speaker: 
+    _Text: 
+  - _Id: 2008
+    _Speaker: 
+    _Text: 
