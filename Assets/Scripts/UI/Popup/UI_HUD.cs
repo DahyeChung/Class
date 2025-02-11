@@ -1,7 +1,9 @@
-﻿public class UI_HUD : MonoBehaviour
+﻿using UnityEngine;
+
+public class UI_HUD : MonoBehaviour
 {
     private PlayerInfo playerInfo;
-    //private List<GameObject> luciferinList = new List<GameObject>();
+    // private List<GameObject> luciferinList = new List<GameObject>();
 
 
     public GameObject luciferinLight1, luciferinLight2, luciferinLight3;
@@ -25,33 +27,11 @@
 
     private void Start()
     {
-        luciferinStack.Push(luciferinLight1);
-        luciferinStack.Push(luciferinLight2);
-        luciferinStack.Push(luciferinLight3); // first to be used
+        Debug.Log("현재 Luciferin : " + PlayerInfo.instance.luciferin);
+
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            // PlayerInfo.instance.TestSkill1();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            PlayerInfo.instance.TestSkill2();
-            GainLuciferin();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            PlayerInfo.instance.TestSkill3();
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            // UseGadget();
-            UseLuciferin();
-        }
     }
 
 
@@ -95,14 +75,9 @@
         // If the player get the luciferin, the light will be activated
     }
 
-    public void UseLuciferin()
+    public void UseLuciferin(int luciferinCount)
     {
-        if (luciferinStack.Count <= 0)
-        {
-            Debug.Log("No luciferin left");
-            return;
-        }
-
+        Debug.Log("현재 Luciferin : " + luciferinCount);
         //// UI 루시페린 갱신
         //for (int i = 0; i < luciferinList.Count; i++)
         //{
@@ -118,3 +93,7 @@
 
 
 }
+
+// 키를 누란다.(어디서든지)) -> 플레이어 인포가 호출된다.-> 스킬 컨트롤러로 스킬 사용한다.. -> 유아이 허드의 루시페린을 변경시킨다.
+
+// 플레이어 인포에서 키 누른다 -> 스킬 컨트롤러로 스킬 사용한다 -> 유아이 허드의 루시페린을 변경시킨다.

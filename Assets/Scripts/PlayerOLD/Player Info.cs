@@ -25,7 +25,7 @@ public class PlayerInfo : MonoBehaviour
     void Start()
     {
         instance = this;
-        _skillController = new SkillController();
+        _skillController = new SkillController(GetComponent<UI_HUD>());
     }
 
     // Update is called once per frame
@@ -118,33 +118,28 @@ public class PlayerInfo : MonoBehaviour
 
     }
 
-    public void TestSkill1()
+    public void Scouting1()
     {
         _skillController.SkillShot(1001, transform.position + transform.forward * 5f, transform.rotation, () =>
         {
 
         });
-        Debug.Log("TestSkill1");
     }
 
-    public void TestSkill2()
+    public void LumiAbsorption2()
     {
         _skillController.SkillShot(1002, transform.position, Quaternion.identity, () =>
         {
 
         });
-        Debug.Log("TestSkill2");
     }
 
-    public void TestSkill3()
+    public void FLashBang3()
     {
         _skillController.SkillShot(1003, transform.position + transform.forward * 1f, transform.rotation, () =>
             {
-
             }
-
         );
-        Debug.Log("TestSkill3");
     }
 
     public void Skill3End()

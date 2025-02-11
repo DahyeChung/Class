@@ -1,42 +1,37 @@
-//using System.Collections;
-//using UnityEngine;
+using UnityEngine;
 
-//public class PlayerGadgetController : MonoBehaviour
-//{
-//    public PoolManangerKOR poolManager;
+public class PlayerGadgetController : MonoBehaviour
+{
+    private PlayerInfo player;
 
-//    // Start is called before the first frame update
-//    void Start()
-//    {
-//        // poolManager = GetComponent<PoolManangerKOR>();
-//    }
-//    void Update()
-//    {
-//        if (Input.GetKeyDown(KeyCode.Space))
-//        {
-//            SpawnFlashbang();
-//        }
-//    }
+    void Start()
+    {
+        player = GetComponent<PlayerInfo>();
+    }
+    void Update()
+    {
 
-//    void SpawnFlashbang()
-//    {
-//        GameObject flashbang = poolManager.GetSpawn("FlashBang");
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("Scouting");
+            player.Scouting1();
+        }
 
-//        if (flashbang == null)
-//        {
-//            Debug.Log("플래시뱅 생성 실패");
-//            return;
-//        }
-//        flashbang.transform.position = this.transform.position + new Vector3(0, 1, 2); // 플레이어 앞에 생성
-//        // TODO : 플레이어가 바라보는 방향으로 생성되도록 수정
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Debug.Log("Absorption");
+            player.LumiAbsorption2();
+        }
 
-//        StartCoroutine(ReturnFlashbang(flashbang)); // 일정 시간 후 풀에 반환
-//    }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Debug.Log("Flashbang");
+            player.FLashBang3();
+        }
 
-//    IEnumerator ReturnFlashbang(GameObject flashbang)
-//    {
-//        var gadget3 = DB.DataTables.GetSkill(1003);
-//        yield return new WaitForSeconds(gadget3.Duration); // 데이터의 Duration만큼 대기
-//        poolManager.TakeSpawn(flashbang);
-//    }
-//}
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+        }
+    }
+
+}

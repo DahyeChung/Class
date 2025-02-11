@@ -1,9 +1,14 @@
 ﻿using System;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class SkillController
 {
+    private UI_HUD _uiHUD;
+    public SkillController(UI_HUD ui)
+    {
+        this._uiHUD = ui;
+    }
+
     // 특정 스킬을 발동하는 함수
     public void SkillShot(int skillID, Vector3 pos, Quaternion rot, Action callback = null)
     {
@@ -17,15 +22,20 @@ public class SkillController
             return;
         }
 
-        // 플레이어의 루시페린(Luciferin)이 스킬을 사용하기에 충분한지 확인
-        if (PlayerInfo.instance.luciferin < math.abs(skillData.Luciferin))
+        if (!isAvailableSkill(PlayerInfo.instance.luciferin, skillData.Luciferin))
         {
             Debug.Log("Not enough Luciferin"); // 부족하면 메시지를 출력하고 함수 종료
             return;
         }
 
         // 스킬 사용 시 필요한 루시페린을 차감
-        PlayerInfo.instance.luciferin -= skillData.Luciferin;
+        PlayerInfo.instance.luciferin += skillData.Luciferin;
+
+        // 최대치 보장
+        if (PlayerInfo.instance.luciferin > PlayerInfo.instance.maxLuciferin)
+        {
+            PlayerInfo.instance.luciferin = PlayerInfo.instance.maxLuciferin;
+        }
 
         // 오브젝트 풀에서 해당 스킬 오브젝트를 가져와 생성 (위치 및 회전 적용)
         var skillOB = PoolMananger.instance.GetSpawn(skillData.Name, pos, rot);
@@ -36,5 +46,14 @@ public class SkillController
             // SkillBase 스크립트에 스킬 정보를 전달하고, 콜백 함수 설정
             skillOB.GetComponent<SkillBase>().SetInfo(skillData, callback);
         }
+
+        // _uiHUD.UseLuciferin(PlayerInfo.instance.luciferin);
     }
+
+    /// 루시페린이 충분한지 확인하는 함수
+    private bool isAvailableSkill(int player, int luciferinRequired)
+    {
+        return player + luciferinRequired >= 0;
+    }
+
 }
