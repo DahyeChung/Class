@@ -22,6 +22,8 @@ public class SkillFlashBang : SkillBase
         }
 
         base.Init();
+        SkillType = Define.SkillType.FireflyFlashbang;
+
     }
 
     public override IEnumerator Duration()

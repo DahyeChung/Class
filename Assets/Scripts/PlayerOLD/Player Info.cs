@@ -19,13 +19,13 @@ public class PlayerInfo : MonoBehaviour
     public int maxLuciferin = 3;
     public int luciferin = 3;
 
-    private SkillController _skillController;
+    private SkillManager _skillController;
     public bool isHide = false;
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
-        _skillController = new SkillController(GetComponent<UI_HUD>());
+        _skillController = new SkillManager(GetComponent<UI_HUD>());
     }
 
     // Update is called once per frame

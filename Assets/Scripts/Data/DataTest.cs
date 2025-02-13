@@ -13,7 +13,8 @@ public class DataTest : MonoBehaviour
 
     void Start()
     {
-        #region ID·Î È£Ãâ
+        #region ID·Î È£Ãâ 대충한글
+
         var skillTable = DB.DataTables.GetSkill(1001);
         Debug.Log("Skill Name : " + skillTable.Name);
         Debug.Log("Skill Range : " + skillTable.Range);

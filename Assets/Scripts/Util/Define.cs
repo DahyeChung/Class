@@ -45,18 +45,12 @@ public class Define : MonoBehaviour
 
     public enum SkillType
     {
-        Firefly,
-        ShadowClones,
+        Unknown,
+        FireflyScouting,
         LuminescentAbsorption,
+        FireflyFlashbang,
     }
 
-    public enum GadgetType
-    {
-        Scouting,
-        Absorption,
-        Flashbang,
-        MainGadget,
-    }
 
 
 }
